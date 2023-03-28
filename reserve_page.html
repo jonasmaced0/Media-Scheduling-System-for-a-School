@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/reserve_page.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+
+    <title>Colégio Vencer Sempre - Login</title>
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <h1><img src="images/logo.png" alt="Logo do Colégio Vencer Sempre"></h1>
+            </div>
+            <div class="title">
+                <h2>Sistema de Agendamento de Mídias</h2>
+            </div> 
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="nav-left">
+                <div class="box">
+                    <div class="titulo">
+                        <h3>Agendamento</h3>
+                    </div>
+
+                    <div class="itens">
+                        <h4>Consultar Agendamento</h4>
+                        <h4>Realizar Agendamento</h4>
+                    </div>    
+                </div>
+
+                <div class="box">
+                    <div class="titulo">
+                        <h3>Cadastro</h3>
+                    </div>
+                    
+                    <div class="itens">
+                        <h4>Equipamentos</h4>
+                        <h4>Professores</h4>
+                        <h4>Turmas</h4>
+                    </div>    
+                </div>
+
+                <div class="box">
+                    <div class="titulo">
+                        <h3>Relatório</h3>
+                    </div>
+                    
+                    <div class="itens">
+                        <h4>Consultar Agendamento</h4>
+                        <h4>Realizar Agendamento</h4>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="main-container">
+                    <h3>Realizar Agendamento</h3>
+
+
+                    <h4>Selecione o equipamento a ser reservado:</h4>
+                    <form>
+                        <select name="equipamento" required="required">
+                            <option>Escolha um equipamento para reservar</option>
+                            <option value="tv">Televisão</option>
+                            <option value="som">Aparelho de Som</option>
+                            <option value="monitor">Monitor</option>
+                            <option value="slide">Projetor de Slide</option>
+                        </select>
+                    </form>
+
+                    <h4>Selecione o nome do Professor(a):</h4>
+                    <form>
+                        <select name="equipamento" required="required">
+                            <option>Escolha seu nome</option>
+                            <option value="jonas">Jonas Mierri</option>
+                            <option value="pedro">Pedro Karma</option>
+                            <option value="gabi">Gabriela Sampaio</option>
+                            <option value="larissa">Larissa Monteiro</option>
+                            <option value="marcelo">Marcelo Montenegro</option>
+                            <option value="pietro">Pietro Batista</option>
+                            <option value="rafaela">Rafaela Correia</option>
+                            <option value="maria">Maria Madalena</option>
+                            <option value="andressa">Andressa Barbosa</option>
+                            <option value="camila">Camila</option>
+                        </select>
+                    </form>
+
+                    <h4>Selecione a turma:</h4>
+                    <form>
+                        <select name="turma" required="required">
+                            <option>Selecione a turma</option>
+                            <option value="Inf1A">Infantil 1-A</option>
+                            <option value="Inf1B">Infantil 1-B</option>
+                            <option value="Inf2A">Infantil 2-A</option>
+                            <option value="Inf2B">Infantil 2-B</option>
+                            <option value="Inf3A">Infantil 3-A</option>
+                            <option value="Inf3B">Infantil 3-B</option>
+                            <option value="1A">1º Ano A</option>
+                            <option value="1B">1º Ano B</option>
+                            <option value="2A">2º Ano A</option>
+                            <option value="2B">2º Ano B</option>
+                            <option value="3A">3º Ano A</option>
+                            <option value="3B">3º Ano B</option>
+                            <option value="4A">4º Ano A</option>
+                            <option value="4B">4º Ano B</option>
+                            <option value="5A">5º Ano A</option>
+                            <option value="5B">5º Ano B</option>
+                            <option value="6A">6º Ano A</option>
+                            <option value="6B">6º Ano B</option>
+                            <option value="7A">7º Ano A</option>
+                            <option value="7B">7º Ano B</option>
+                            <option value="8A">8º Ano A</option>
+                            <option value="8B">8º Ano B</option>
+                            <option value="9A">9º Ano A</option>
+                            <option value="9B">9º Ano B</option>  
+                        </select>
+                    </form>
+
+                    <h4>Selecione a data da reserva:</h4>
+                    <input type="date" id="start" name="data"
+                    value="2023-02-01"
+                    min="2023-02-01" max="2023-12-31">
+
+                    <h4>Selecione o horário da reserva</h4>
+                    <input type="time" id="appt" name="appt"
+                    min="07:00" max="18:00" required>
+
+                    <h4>Observações sobre a reserva:</h4>
+
+                    <form>
+                        <textarea style="resize: none" name="mensagem"></textarea>
+                    </form>
+
+                    <a href="./concluid_page.html"><input type="submit" value="CADASTRAR AGENDAMENTO"></a>
+                </div>
+
+            </div>
+            <div class="nav-rigth">
+                <div class="box2">
+                    <div class="foto">
+                        <img src="/images/3x4-30-08-1.jpg" width="115px" height="115px" alt="">
+                    </div>
+                    <div class="descricao">
+                        <h5>Jonas V. M.</h5>
+                        <h5>ID: 38459</h5>
+                        <h5>Profº de Inglês</h5>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
